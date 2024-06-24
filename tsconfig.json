@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "es2019",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "strict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      // express need noImplicitReturns to be false
+      "noImplicitReturns": false,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      // typeorm need this for schemes
+      "strictPropertyInitialization": false,
+    },
+    "include": ["src/**/*"],
+    "exclude": ["src/__tests__/**/*", "**/*.test.ts"]
+  }

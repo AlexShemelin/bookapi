@@ -1,0 +1,24 @@
+meta {
+  name: 4_edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3003/books/23
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6MywiaWF0IjoxNzE5MjQ0ODI5LCJleHAiOjE3MTkyODgwMjl9.kAB2R5cX4dV7MD5teduanNkHQD0z6KnTSQtJMznmR10
+}
+
+body:json {
+  {
+    "title": "New Title",
+    "author": "New Author",
+    "publicationDate": "06.22.1964",
+    "genres": ["comedy"]
+  }
+}

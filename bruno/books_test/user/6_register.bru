@@ -1,0 +1,19 @@
+meta {
+  name: 6_register
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3003/users/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "peter",
+    "password": "admin",
+    "email": "bbb@bbb.com"
+  }
+}
